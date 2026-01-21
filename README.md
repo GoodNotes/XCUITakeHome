@@ -15,6 +15,7 @@ Your task is to create **UI automation tests** for this application using XCUITe
    - macOS (any version)
    - iPhone 17 Pro (iOS 26.1)
    - iPad Mini (iPadOS 26.1)
+3. **Document any bugs or issues** discovered in the application as part of your submission
 
 
 
