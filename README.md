@@ -15,7 +15,7 @@ Your task is to create **UI automation tests** for this application using XCUITe
    - macOS (any version)
    - iPhone 17 Pro (iOS 26.1)
    - iPad Mini (iPadOS 26.1)
-3. **Document any bugs or issues** discovered in the application as part of your submission
+3. Document any bugs or issues discovered in the application as part of your submission
 
 
 
@@ -32,4 +32,10 @@ Your task is to create **UI automation tests** for this application using XCUITe
 
 - macOS 15.0+
 - Xcode 26.0+
+
+### Submitting your work
+- Please push your work to a branch in the repo.
+- Please create a pull request (PR).
+- Add gn-mark-n and pbellchambers as reviewers of the PR.
+- Inform the recruiter that it is ready to review.
 
