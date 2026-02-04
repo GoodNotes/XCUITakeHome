@@ -16,6 +16,13 @@
 		A10000001234560007 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000011234560007 /* TaskListView.swift */; };
 		A10000001234560008 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000011234560008 /* AddTaskView.swift */; };
 		A10000001234560009 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000011234560009 /* TaskDetailView.swift */; };
+		AE60BC092F33606F00A1E2AB /* UITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC082F33606F00A1E2AB /* UITestBase.swift */; };
+		AE60BC0B2F3360AA00A1E2AB /* XCUIElementHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC0A2F3360AA00A1E2AB /* XCUIElementHelpers.swift */; };
+		AE60BC0D2F33612200A1E2AB /* HomePageLocators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC0C2F33612200A1E2AB /* HomePageLocators.swift */; };
+		AE60BC0F2F33614500A1E2AB /* TaskViewLocators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC0E2F33614500A1E2AB /* TaskViewLocators.swift */; };
+		AE60BC132F3361AA00A1E2AB /* TaskSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC122F3361AA00A1E2AB /* TaskSteps.swift */; };
+		AE60BC152F3361FC00A1E2AB /* EditTaskSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC142F3361FC00A1E2AB /* EditTaskSteps.swift */; };
+		AE60BC192F33625700A1E2AB /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60BC182F33625700A1E2AB /* TaskTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,14 @@
 		A10000011234560009 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		A10000051234560001 /* TodoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10000051234560002 /* TodoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4892392F3393BD005740F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE60BC082F33606F00A1E2AB /* UITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestBase.swift; sourceTree = "<group>"; };
+		AE60BC0A2F3360AA00A1E2AB /* XCUIElementHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIElementHelpers.swift; sourceTree = "<group>"; };
+		AE60BC0C2F33612200A1E2AB /* HomePageLocators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageLocators.swift; sourceTree = "<group>"; };
+		AE60BC0E2F33614500A1E2AB /* TaskViewLocators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewLocators.swift; sourceTree = "<group>"; };
+		AE60BC122F3361AA00A1E2AB /* TaskSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSteps.swift; sourceTree = "<group>"; };
+		AE60BC142F3361FC00A1E2AB /* EditTaskSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskSteps.swift; sourceTree = "<group>"; };
+		AE60BC182F33625700A1E2AB /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +79,7 @@
 		A10000071234560001 = {
 			isa = PBXGroup;
 			children = (
+				AE60BC032F33600C00A1E2AB /* TodoListAppUITests */,
 				4D0540072F20223300D59D59 /* TodoListApp.xctestplan */,
 				A10000071234560002 /* TodoListApp */,
 				A10000071234560004 /* Products */,
@@ -119,6 +135,53 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AE60BC032F33600C00A1E2AB /* TodoListAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE60BC072F33604C00A1E2AB /* Steps */,
+				AE60BC062F33604500A1E2AB /* Tests */,
+				AE60BC052F33603E00A1E2AB /* Locators */,
+				AE60BC042F33603700A1E2AB /* Helpers */,
+				AE60BC082F33606F00A1E2AB /* UITestBase.swift */,
+				AE4892392F3393BD005740F0 /* README.md */,
+			);
+			path = TodoListAppUITests;
+			sourceTree = "<group>";
+		};
+		AE60BC042F33603700A1E2AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AE60BC0A2F3360AA00A1E2AB /* XCUIElementHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AE60BC052F33603E00A1E2AB /* Locators */ = {
+			isa = PBXGroup;
+			children = (
+				AE60BC0C2F33612200A1E2AB /* HomePageLocators.swift */,
+				AE60BC0E2F33614500A1E2AB /* TaskViewLocators.swift */,
+			);
+			path = Locators;
+			sourceTree = "<group>";
+		};
+		AE60BC062F33604500A1E2AB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE60BC182F33625700A1E2AB /* TaskTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AE60BC072F33604C00A1E2AB /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				AE60BC122F3361AA00A1E2AB /* TaskSteps.swift */,
+				AE60BC142F3361FC00A1E2AB /* EditTaskSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,6 +234,7 @@
 					};
 					A10000041234560002 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 2620;
 						TestTargetID = A10000041234560001;
 					};
 				};
@@ -225,6 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE60BC092F33606F00A1E2AB /* UITestBase.swift in Sources */,
+				AE60BC0D2F33612200A1E2AB /* HomePageLocators.swift in Sources */,
+				AE60BC192F33625700A1E2AB /* TaskTests.swift in Sources */,
+				AE60BC0F2F33614500A1E2AB /* TaskViewLocators.swift in Sources */,
+				AE60BC132F3361AA00A1E2AB /* TaskSteps.swift in Sources */,
+				AE60BC0B2F3360AA00A1E2AB /* XCUIElementHelpers.swift in Sources */,
+				AE60BC152F3361FC00A1E2AB /* EditTaskSteps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +503,7 @@
 		A100000C1234560005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -444,6 +516,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TodoListApp;
@@ -453,6 +526,7 @@
 		A100000C1234560006 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
